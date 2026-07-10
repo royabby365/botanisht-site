@@ -9,7 +9,7 @@
   --bg-tint: #f1f5ec;
   --ink: #16271c;
   --ink-soft: #4d5f53;
-  --ink-faint: #7c8b80;
+  --ink-faint: #566a5d;
   --line: #e3e9dc;
   --leaf: #2e7d4f;
   --leaf-deep: #1b5e3f;
@@ -35,7 +35,7 @@
   --bg-tint: #131e17;
   --ink: #eaf2ec;
   --ink-soft: #a9bcae;
-  --ink-faint: #789085;
+  --ink-faint: #9bb1a2;
   --line: #243328;
   --leaf: #5cc98a;
   --leaf-deep: #2e7d4f;
@@ -67,6 +67,10 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.12; font-weigh
 p { margin: 0; }
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
+
+/* Visible keyboard focus for accessibility */
+:focus-visible { outline: 2px solid var(--leaf); outline-offset: 2px; border-radius: 6px; }
+.btn:focus-visible, .icon-btn:focus-visible { outline-offset: 3px; }
 
 .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
 
@@ -197,6 +201,7 @@ img { max-width: 100%; display: block; }
 .appcard__htitle { font-weight: 700; font-size: .95rem; color: var(--ink); }
 .live { display: inline-flex; align-items: center; gap: 5px; font-size: .68rem; font-weight: 700; color: var(--leaf); letter-spacing: .04em; }
 .live__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--leaf-bright); box-shadow: 0 0 0 3px color-mix(in srgb, var(--leaf-bright) 30%, transparent); animation: pulse 1.8s infinite; }
+.live--static .live__dot { animation: none; }
 @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
 .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 12px; }
 .metric { border-radius: 10px; padding: 10px; border: 1.5px solid; }

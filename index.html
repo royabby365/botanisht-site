@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Botanisht — Your friendly botanist in your pocket</title>
-  <meta name="description" content="Botanisht is the open-source, offline-first plant care companion for every garden — from windowsill herbs to automated hydroponic farms. Climate-aware advice, wireless sensor integration, and live hydroponic telemetry." />
+  <meta name="description" content="Botanisht is the open-source, offline-first plant care companion for every garden — from windowsill herbs to hydroponic systems. Local environment logs, companion-planting alerts, ZIP-code weather, and universal design themes. No account, no cloud." />
   <meta name="theme-color" content="#1b5e3f" />
   <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
   <link rel="apple-touch-icon" href="assets/img/logo.svg" />
@@ -27,7 +27,7 @@
 
       <nav class="nav__links" id="navlinks" aria-label="Primary">
         <a href="#features">Features</a>
-        <a href="#climate">Climate-aware</a>
+        <a href="#climate">Zones</a>
         <a href="#hydro">Hydroponics</a>
         <a href="#platforms">Platforms</a>
         <a href="#opensource">Open source</a>
@@ -63,12 +63,12 @@
       </div>
       <div class="container hero__inner">
         <div class="hero__copy reveal">
-          <span class="pill"><span class="dot"></span> Open source · Offline-first · Multi-platform</span>
+          <span class="pill"><span class="dot"></span> Open source · Offline-first · Privacy by design</span>
           <h1 class="hero__title">Your friendly <span class="grad">botanist</span><br/>in your pocket.</h1>
           <p class="hero__lede">
-            Botanisht is a plant-care companion built for every kind of grower — from a single
-            windowsill basil to an automated hydroponic farm. Get climate-aware advice, connect
-            wireless sensors, and watch your garden thrive.
+            Botanisht is the local-first plant care companion for every kind of grower — from a
+            windowsill herb to a multi-rack hydroponic system. Log your environment, get on-device
+            companion-planting and weather alerts, and watch your garden thrive. No account, no cloud, no fuss.
           </p>
           <div class="hero__cta">
             <a class="btn btn--primary btn--lg" href="#get">Get Botanisht</a>
@@ -80,11 +80,11 @@
           <ul class="hero__trust">
             <li><strong>0</strong> accounts required</li>
             <li><strong>100%</strong> works offline</li>
-            <li><strong>5</strong> platforms</li>
+            <li><strong>4</strong> garden views</li>
           </ul>
         </div>
 
-        <!-- Authentic app mock: Hydroponic Telemetry card from the real Flutter UI -->
+        <!-- App mock: manual Hydroponic Log card (reframed from live telemetry) -->
         <div class="hero__phone reveal" aria-hidden="true">
           <div class="phone">
             <div class="phone__notch"></div>
@@ -111,8 +111,8 @@
 
               <div class="appcard appcard--hydro">
                 <div class="appcard__head">
-                  <span class="appcard__htitle">Hydroponic Telemetry</span>
-                  <span class="live"><span class="live__dot"></span>LIVE</span>
+                  <span class="appcard__htitle">Hydroponic Log</span>
+                  <span class="live live--static"><span class="live__dot"></span>LOG</span>
                 </div>
                 <div class="metric-grid">
                   <div class="metric metric--ok">
@@ -129,7 +129,7 @@
                 <div class="metric-sub">
                   <div class="msub"><span class="msub__ic">🌡️</span><span class="msub__v">21.4°C</span><span class="msub__l">Temp</span></div>
                   <div class="msub"><span class="msub__ic">💦</span><span class="msub__v">64%</span><span class="msub__l">Humidity</span></div>
-                  <div class="msub"><span class="msub__ic">🕑</span><span class="msub__v">12s</span><span class="msub__l">Updated</span></div>
+                  <div class="msub"><span class="msub__ic">🕑</span><span class="msub__v">2h</span><span class="msub__l">Logged</span></div>
                 </div>
               </div>
 
@@ -140,7 +140,7 @@
                 </div>
                 <div class="task">
                   <span class="task__check task__check--soon">!</span>
-                  <span class="task__text">Feed tomatoes (NPK 10-10-10)</span>
+                  <span class="task__text">Basil &amp; rue clash — <em>move apart</em></span>
                 </div>
               </div>
             </div>
@@ -153,11 +153,11 @@
     <section class="strip">
       <div class="container strip__inner">
         <span>Built with Flutter</span>
-        <span>Drift + Isar local DB</span>
-        <span>BLE &amp; Wi-Fi sensors</span>
-        <span>USDA · AHS climate zones</span>
+        <span>Isar local database</span>
+        <span>Companion planting alerts</span>
+        <span>ZIP-code weather</span>
         <span>Privacy by design</span>
-        <span>No monthly fees</span>
+        <span>No account needed</span>
       </div>
     </section>
 
@@ -167,7 +167,7 @@
         <div class="section__head reveal">
           <span class="eyebrow">Everything your garden needs</span>
           <h2 class="section__title">One app for the whole growing season</h2>
-          <p class="section__sub">Botanisht models your garden as faithfully as a spreadsheet — then turns that model into calm, timely, location-aware guidance.</p>
+          <p class="section__sub">Botanisht keeps your garden organized and your plants healthy — all on-device, with nothing leaving your phone.</p>
         </div>
 
         <div class="grid grid--features">
@@ -175,92 +175,92 @@
             <div class="card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8M12 8C12 5 9 3 5 3c0 4 3 6 7 5M12 11c0-3 3-5 7-5 0 4-3 6-7 5"/></svg>
             </div>
-            <h3>Multi-zone gardens</h3>
-            <p>Model outdoor beds, greenhouses, windowsills, grow-lights, terrariums, containers and raised beds — each with its own geometry, microclimate and soil conditions.</p>
+            <h3>Multi-zone tracking</h3>
+            <p>Organize every plant across Indoor, Kitchen, Hydro and Diagnostics tabs. Each zone keeps its own conditions, so a windowsill herb and a garage hydro rack both get the care they need.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v6M17 2v6M5 8h14l-1 13a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 8z"/><path d="M9 14h6"/></svg>
             </div>
-            <h3>Rich plant profiles</h3>
-            <p>Water, light, soil, temperature, humidity, fertilizer (NPK), pruning and propagation for every plant — plus companion &amp; clash planting and a full pest &amp; disease library with organic treatments.</p>
+            <h3>Plant care profiles</h3>
+            <p>Per-plant water, light, soil, temperature, humidity, fertilizer (NPK), pruning and propagation guidance — plus companion and clash planting rules that warn you before enemies sit side by side.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 3 0 0 0 18 0a9 3 0 0 0-18 0"/><path d="M12 9v3l2 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 4.5-3.2 7.6-8 9-4.8-1.4-8-4.5-8-9V7l8-4z"/><path d="M9.5 12l2 2 3.5-3.5"/></svg>
             </div>
-            <h3>Climate-aware advice</h3>
-            <p>Botanisht knows your USDA hardiness zone, AHS heat zone and Köppen/Trewartha climate class — so recommendations fit your actual local conditions, not a generic average.</p>
+            <h3>Companion &amp; clash alerts</h3>
+            <p>Botanisht's on-device engine checks your layout and flags bad neighbors — like basil next to rue — and highlights good pairings. All computed locally, with no network call.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5a7 7 0 0 1 14 0"/><path d="M8.5 16a3.5 3.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
             </div>
-            <h3>Wireless sensors</h3>
-            <p>Connect Bluetooth Low Energy and Wi-Fi (mDNS) sensors — plus USB serial — for live soil moisture, temperature, humidity, CO₂ and light (PPFD) readings streamed straight into the app.</p>
+            <h3>Privacy-Centric Location Sync</h3>
+            <p><strong>Grounded in your neighborhood.</strong> Just enter your garden's ZIP code to unlock localized weather and frost indicators — without handing over continuous background GPS. Botanisht watches your local environment profile for sudden shifts so you stay ahead of changing cultivation windows.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13h4v7H4zM10 8h4v12h-4zM16 4h4v16h-4z"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v16H5z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
             </div>
-            <h3>Hydroponic telemetry</h3>
-            <p>DWC, NFT, ebb &amp; flow, drip, aeroponics, wick or Kratky — Botanisht polls your sensor endpoints and shows live pH, TDS, temperature &amp; humidity with OPTIMAL / CAUTION status.</p>
+            <h3>Local-First Environment Logs</h3>
+            <p><strong>Track every variable internally.</strong> Log soil metrics, moisture and hydroponic levels straight into your private on-device database. Whether it's windowsill herbs or a multi-rack system, Botanisht structures your manual pH, TDS and moisture readings into clean environment profiles. Wireless hardware sync arrives in V2.0.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 7v5l3 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2 6 4-14 2 8h6"/></svg>
             </div>
-            <h3>Smart reminders</h3>
-            <p>Watering, feeding and pruning schedules run in the background and surface as local notifications — no server, no account, no forgotten tomato plant.</p>
+            <h3>The Diagnostics Dashboard</h3>
+            <p><strong>Catch problems early.</strong> A unified health matrix monitors every zone at once. When a crop shows a care deficit or trips a companion-planting clash, the Diagnostics view surface-highlights the warning instantly — keeping maintenance predictable and structured.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.2L4 17.2z"/><path d="M9 9h6M9 12h4"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="3.5" fill="currentColor" stroke="none"/></svg>
             </div>
-            <h3>Live weather</h3>
-            <p>Uses your location to pull real-time weather and fold it into care timing — water before the heatwave, hold off when rain is coming.</p>
+            <h3>Universal Design Themes</h3>
+            <p>Read it your way — switch between Cream, Evergreen and High-Contrast themes with strict readability scaling, so the app stays comfortable for every eye and every light.</p>
           </article>
 
           <article class="card reveal">
             <div class="card__icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 16v-5M12 16V8M16 16v-8M20 16v-3"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
             </div>
-            <h3>Dashboards &amp; charts</h3>
-            <p>Trend your sensor data and growth with interactive charts and gauges, so problems show up as a colour shift long before they show up on the leaf.</p>
+            <h3>Data portability</h3>
+            <p>Your data stays yours. Everything lives in a local NoSQL store (Isar) with offline JSON export and import — back up, move, or quit anytime with zero accounts and zero lock-in.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ===================== CLIMATE SPOTLIGHT ===================== -->
+    <!-- ===================== ZONES SPOTLIGHT ===================== -->
     <section class="section section--tint" id="climate">
       <div class="container split">
         <div class="split__media reveal" aria-hidden="true">
           <div class="zone-art">
             <div class="zone-art__ring"></div>
             <div class="zone-node zone-node--1"><span>🪴</span>Indoor</div>
-            <div class="zone-node zone-node--2"><span>🌻</span>Outdoor</div>
-            <div class="zone-node zone-node--3"><span>🏡</span>Greenhouse</div>
-            <div class="zone-node zone-node--4"><span>💧</span>Hydro</div>
-            <div class="zone-node zone-node--5"><span>📦</span>Container</div>
+            <div class="zone-node zone-node--2"><span>🍳</span>Kitchen</div>
+            <div class="zone-node zone-node--3"><span>💧</span>Hydro</div>
+            <div class="zone-node zone-node--4"><span>🩺</span>Diagnostics</div>
+            <div class="zone-node zone-node--5"><span>🌿</span>Garden</div>
             <div class="zone-center">Zones</div>
           </div>
         </div>
         <div class="split__copy reveal">
-          <span class="eyebrow">Modeled, not guessed</span>
+          <span class="eyebrow">Your garden, structured</span>
           <h2 class="section__title">Your garden, mapped zone by zone</h2>
-          <p class="section__sub">Most apps treat a plant as a name in a list. Botanisht treats your garden as a real place — with sun exposure, wind, soil pH, drainage, aspect and elevation captured per zone.</p>
+          <p class="section__sub">Botanisht treats your garden as a real place — organized into the views you actually use, with each zone holding its own conditions, sun exposure and notes.</p>
           <ul class="checklist">
-            <li><span>✓</span> Outdoor, greenhouse, indoor, hydroponic, container &amp; raised-bed zones</li>
-            <li><span>✓</span> Sun exposure, wind, slope, aspect and last soil-test tracking</li>
-            <li><span>✓</span> Per-zone microclimate: average temp, humidity and conditions</li>
-            <li><span>✓</span> Hardiness, heat and climate-zone classification auto-derived from location</li>
+            <li><span>✓</span> Indoor, Kitchen, Hydro and Diagnostics views for every part of your garden</li>
+            <li><span>✓</span> Per-zone conditions: sun exposure, soil pH, drainage and notes</li>
+            <li><span>✓</span> ZIP-code-driven local weather and basic frost indicators</li>
+            <li><span>✓</span> Manual environment logs kept tidy and grouped per zone</li>
           </ul>
           <a class="btn btn--primary" href="https://github.com/royabby365/botanisht" target="_blank" rel="noopener">See the data model</a>
         </div>
@@ -271,19 +271,19 @@
     <section class="section" id="hydro">
       <div class="container split split--rev">
         <div class="split__copy reveal">
-          <span class="eyebrow">From soil to solution</span>
-          <h2 class="section__title">Real-time hydroponic monitoring</h2>
-          <p class="section__sub">Point Botanisht at your sensor's HTTP endpoint and it polls every few seconds, saving every reading locally and colour-coding the result. Walk away and the background service keeps logging.</p>
+          <span class="eyebrow">Log it, don't lose it</span>
+          <h2 class="section__title">Hydroponic environment logs</h2>
+          <p class="section__sub">Record your reservoir's pH, TDS/EC, temperature and humidity by hand and let Botanisht structure each entry into a per-zone profile. No hardware required today — automated sensor sync is on the roadmap.</p>
           <ul class="checklist">
-            <li><span>✓</span> Supports DWC, NFT, ebb &amp; flow, drip, aeroponics, wick &amp; Kratky</li>
-            <li><span>✓</span> Live pH &amp; TDS/EC with OPTIMAL / CAUTION / OUT-OF-RANGE bands</li>
-            <li><span>✓</span> Temperature, humidity and "last seen" freshness at a glance</li>
-            <li><span>✓</span> Every reading persisted to a local Isar database for trend charts</li>
+            <li><span>✓</span> Track DWC, NFT, ebb &amp; flow, drip, aeroponics, wick &amp; Kratky systems</li>
+            <li><span>✓</span> Manual pH &amp; TDS/EC with OPTIMAL / CAUTION / OUT-OF-RANGE bands</li>
+            <li><span>✓</span> Temperature, humidity and "last logged" freshness at a glance</li>
+            <li><span>✓</span> Every reading persisted to a local Isar database for trend views</li>
           </ul>
         </div>
         <div class="split__media reveal" aria-hidden="true">
           <div class="gauge-card">
-            <div class="gauge-card__head"><span>Reservoir A</span><span class="live"><span class="live__dot"></span>LIVE</span></div>
+            <div class="gauge-card__head"><span>Reservoir A</span><span class="live live--static"><span class="live__dot"></span>LOG</span></div>
             <div class="gauge-row">
               <div class="gauge gauge--ok"><span class="gauge__num">6.2</span><span class="gauge__lbl">pH · optimal</span></div>
               <div class="gauge gauge--ok"><span class="gauge__num">820</span><span class="gauge__lbl">TDS ppm · optimal</span></div>
@@ -294,7 +294,7 @@
                 <polyline class="spark__area" points="0,52 28,48 56,50 84,42 112,44 140,36 168,38 196,30 224,33 252,26 280,28 320,22 320,70 0,70"/>
               </svg>
             </div>
-            <div class="gauge-foot"><span>🌡️ 21.4°C</span><span>💦 64%</span><span>🕑 12s ago</span></div>
+            <div class="gauge-foot"><span>🌡️ 21.4°C</span><span>💦 64%</span><span>🕑 2h ago</span></div>
           </div>
         </div>
       </div>
@@ -326,10 +326,10 @@
           <h2 class="section__title">Open source and private by default</h2>
           <p class="section__sub">Botanisht stores your garden in a local database on your device. There is no account to create, no telemetry leaving your phone, and the full source is public so you can verify every claim.</p>
           <ul class="checklist">
-            <li><span>✓</span> Local-first: Drift + Isar, fully functional offline</li>
+            <li><span>✓</span> Local-first: Isar, fully functional offline</li>
             <li><span>✓</span> No ads, no tracking, no subscription</li>
             <li><span>✓</span> MIT-licensed source you can build yourself</li>
-            <li><span>✓</span> Dark &amp; light themes and multi-language ready</li>
+            <li><span>✓</span> Universal design themes (Cream, Evergreen, High-Contrast) with readability scaling</li>
           </ul>
           <div class="hero__cta">
             <a class="btn btn--primary" href="https://github.com/royabby365/botanisht" target="_blank" rel="noopener">View the source</a>
@@ -339,34 +339,19 @@
         <div class="split__media reveal" aria-hidden="true">
           <div class="code-card">
             <div class="code-card__bar"><span></span><span></span><span></span></div>
-            <pre><code><span class="c-key">import</span> <span class="c-str">'package:botanisht/botanisht.dart'</span>;
-
-<span class="c-com">// Define a garden zone</span>
-<span class="c-key">final</span> bed = Zone(
-  type: ZoneType.raisedBed(
-    specs: RaisedBedSpecs(
-      widthMeters: <span class="c-num">1.2</span>,
-      lengthMeters: <span class="c-num">2.4</span>,
-      heightMeters: <span class="c-num">0.3</span>,
-      material: RaisedBedMaterial.wood(
-        woodType: <span class="c-str">'cedar'</span>,
-        treated: <span class="c-key">false</span>,
-      ),
-      hasIrrigation: <span class="c-key">true</span>,
-    ),
-  ),
-  conditions: ZoneConditions(
-    sunExposure: SunExposure.fullSun(hoursDirectSun: <span class="c-num">7</span>),
-    soilPh: <span class="c-num">6.4</span>,
-  ),
+            <pre><code><span class="c-com">// Log a manual hydroponic reading (stored locally in Isar)</span>
+<span class="c-key">final</span> log = HydroponicLog(
+  zoneId: <span class="c-str">'reservoir-a'</span>,
+  ph: <span class="c-num">6.2</span>,
+  tds: <span class="c-num">820</span>,
+  temperature: <span class="c-num">21.4</span>,
+  humidity: <span class="c-num">64</span>,
+  timestamp: DateTime.now(),
 );
+<span class="c-key">await</span> isar.writeTxn(() => isar.hydroponicLogs.put(log));
 
-<span class="c-com">// Track live hydroponic readings</span>
-sensors.addEndpoint(SensorEndpoint(
-  name: <span class="c-str">'Reservoir A'</span>,
-  url: <span class="c-str">'http://192.168.4.1/telemetry'</span>,
-  pollInterval: Duration(seconds: <span class="c-num">30</span>),
-));</code></pre>
+<span class="c-com">// Export everything — no account, no cloud</span>
+<span class="c-key">final</span> json = <span class="c-key">await</span> gardenRepository.exportToJson();</code></pre>
           </div>
         </div>
       </div>
@@ -381,7 +366,7 @@ sensors.addEndpoint(SensorEndpoint(
           <a class="btn btn--primary btn--lg" href="https://github.com/royabby365/botanisht/releases" target="_blank" rel="noopener">Download a build</a>
           <a class="btn btn--ghost btn--lg" href="https://github.com/royabby365/botanisht" target="_blank" rel="noopener">Clone the repo</a>
         </div>
-        <p class="cta__note">Currently building toward v1.0 · contributions welcome 🌱</p>
+        <p class="cta__note">V1.0 MVP · contributions welcome 🌱</p>
       </div>
     </section>
   </main>
