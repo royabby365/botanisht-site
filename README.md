@@ -12,6 +12,7 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
+
 Or just open `index.html` in a browser.
 
 ## Structure
