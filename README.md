@@ -43,3 +43,5 @@ claims aligned with what the Flutter app actually implements.
 ## License
 
 MIT — same as the Botanisht app.
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/royabby)
