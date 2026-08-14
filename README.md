@@ -1,3 +1,5 @@
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/royabby)
+
 # Botanisht marketing site
 
 The public website advertising **[Botanisht](https://github.com/royabby365/botanisht)** — the open-source, offline-first plant care companion.
@@ -43,5 +45,3 @@ claims aligned with what the Flutter app actually implements.
 ## License
 
 MIT — same as the Botanisht app.
-
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/royabby)
