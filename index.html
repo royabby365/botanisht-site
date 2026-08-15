@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Botanisht — Your friendly botanist in your pocket</title>
-  <meta name="description" content="Botanisht is the open-source, offline-first plant care companion for every garden — from windowsill herbs to hydroponic systems. Local environment logs, companion-planting alerts, ZIP-code weather, and universal design themes. No account, no cloud." />
+  <meta name="description" content="Botanisht is the open-source, offline-first plant care companion for every garden — from windowsill herbs to hydroponic systems. Local environment logs, companion-planting alerts, ZIP-code weather, universal design themes, and an optional Pro tier on the honor system. No account, no cloud." />
   <meta name="theme-color" content="#1b5e3f" />
   <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
   <link rel="apple-touch-icon" href="assets/img/logo.svg" />
@@ -30,6 +30,7 @@
         <a href="#climate">Zones</a>
         <a href="#hydro">Hydroponics</a>
         <a href="#platforms">Platforms</a>
+        <a href="#pro">Pro</a>
         <a href="#opensource">Open source</a>
       </nav>
 
@@ -305,15 +306,15 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="eyebrow">Write once, grow anywhere</span>
-          <h2 class="section__title">Botanisht runs on every device you garden with</h2>
-          <p class="section__sub">A single Flutter codebase ships to phones, desktops and the web — your data stays local and in sync across the devices you actually use.</p>
+          <h2 class="section__title">Where Botanisht is available right now</h2>
+          <p class="section__sub">The v3.3.0 release is Android-first and ships from GitHub today. Google Play and the iOS App Store are next, with desktop and web builds on the roadmap.</p>
         </div>
         <div class="grid grid--platforms">
-          <div class="plat reveal"><span class="plat__emoji">🤖</span><strong>Android</strong><small>Phones &amp; tablets</small></div>
-          <div class="plat reveal"><span class="plat__emoji">🍎</span><strong>iOS</strong><small>iPhone &amp; iPad</small></div>
-          <div class="plat reveal"><span class="plat__emoji">🪟</span><strong>Windows</strong><small>Desktop app</small></div>
-          <div class="plat reveal"><span class="plat__emoji">🐧</span><strong>Linux</strong><small>Desktop app</small></div>
-          <div class="plat reveal"><span class="plat__emoji">🌐</span><strong>Web</strong><small>Any browser</small></div>
+          <div class="plat reveal"><span class="plat__emoji">🤖</span><strong>Android</strong><small>Available now — GitHub release</small></div>
+          <div class="plat reveal"><span class="plat__emoji">▶️</span><strong>Google Play</strong><small>Coming soon — store review</small></div>
+          <div class="plat reveal"><span class="plat__emoji">🍎</span><strong>iOS</strong><small>In progress — App Store next</small></div>
+          <div class="plat reveal"><span class="plat__emoji">🪟</span><strong>Windows</strong><small>On the roadmap</small></div>
+          <div class="plat reveal"><span class="plat__emoji">🐧</span><strong>Linux</strong><small>On the roadmap</small></div>
         </div>
       </div>
     </section>
@@ -327,7 +328,7 @@
           <p class="section__sub">Botanisht stores your garden in a local database on your device. There is no account to create, no telemetry leaving your phone, and the full source is public so you can verify every claim.</p>
           <ul class="checklist">
             <li><span>✓</span> Local-first: Isar, fully functional offline</li>
-            <li><span>✓</span> No ads, no tracking, no subscription</li>
+            <li><span>✓</span> No ads, no tracking, no forced subscription — Pro is a pay-what-you-want honor system</li>
             <li><span>✓</span> MIT-licensed source you can build yourself</li>
             <li><span>✓</span> Universal design themes (Cream, Evergreen, High-Contrast) with readability scaling</li>
           </ul>
@@ -357,16 +358,51 @@
       </div>
     </section>
 
+    <!-- ===================== PRO ===================== -->
+    <section class="section section--tint" id="pro">
+      <div class="container split">
+        <div class="split__copy reveal">
+          <span class="eyebrow">Botanisht Pro</span>
+          <h2 class="section__title">Grow further with Pro</h2>
+          <p class="section__sub">Pro adds a living scoreboard to your garden — and it's unlocked on the honor system. No subscription, no paywall, no nagging.</p>
+          <ul class="checklist">
+            <li><span>✓</span> <strong>XP &amp; levels</strong> for every plant — water, feed, prune, and watch your garden grow</li>
+            <li><span>✓</span> <strong>Care streaks</strong> that reward consistency</li>
+            <li><span>✓</span> <strong>Garden Score</strong> — a weighted health &amp; level score across all your zones</li>
+            <li><span>✓</span> <strong>Expanded catalog</strong> — the full 121+ plant species, Pro-only included</li>
+          </ul>
+        </div>
+        <div class="split__media reveal">
+          <div class="pro-card">
+            <div class="pro-card__head">
+              <span class="pro-card__badge">PRO</span>
+              <h3>Honor system</h3>
+            </div>
+            <p class="pro-card__copy">
+              Tap <strong>Upgrade to Pro</strong> in the app and every feature unlocks
+              instantly — before you pay a cent. If Botanisht earns a place in your
+              garden, buy us a coffee at whatever feels right. If it doesn't, keep the
+              Pro features and pay nothing. That's the whole deal.
+            </p>
+            <a class="btn btn--primary btn--lg pro-card__btn" href="https://buymeacoffee.com/royabby" target="_blank" rel="noopener">
+              ☕ Buy me a coffee
+            </a>
+            <p class="pro-card__note">One-time donation · No subscription · No ads · No tracking</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== CTA ===================== -->
     <section class="cta" id="get">
       <div class="container cta__inner reveal">
         <h2 class="cta__title">Start growing with Botanisht</h2>
-        <p class="cta__sub">Free, open source, and respectful of your data. Grab the latest build or compile it yourself.</p>
+        <p class="cta__sub">Free, open source, and respectful of your data. Pro unlocks on the honor system — donate only if it helps your garden.</p>
         <div class="cta__btns">
-          <a class="btn btn--primary btn--lg" href="https://github.com/royabby365/botanisht/releases" target="_blank" rel="noopener">Download a build</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/royabby365/botanisht/releases" target="_blank" rel="noopener">Download for Android (GitHub)</a>
           <a class="btn btn--ghost btn--lg" href="https://github.com/royabby365/botanisht" target="_blank" rel="noopener">Clone the repo</a>
         </div>
-        <p class="cta__note">V1.0 MVP · contributions welcome 🌱</p>
+        <p class="cta__note">v3.3.0 · Android on GitHub today · Google Play &amp; iOS coming soon 🌱</p>
       </div>
     </section>
   </main>
@@ -385,6 +421,7 @@
         <h4>Product</h4>
         <a href="#features">Features</a>
         <a href="#hydro">Hydroponics</a>
+        <a href="#pro">Pro</a>
         <a href="#platforms">Platforms</a>
         <a href="#get">Download</a>
       </nav>

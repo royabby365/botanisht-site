@@ -360,3 +360,24 @@ img { max-width: 100%; display: block; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .blob, .zone-art__ring, .live__dot { animation: none; }
 }
+
+/* ===================== PRO ===================== */
+.pro-card {
+  background: var(--bg-elev);
+  border: 1.5px solid color-mix(in srgb, var(--sun) 55%, var(--line));
+  border-radius: 22px;
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+.pro-card__head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.pro-card__badge {
+  background: linear-gradient(135deg, #d4a843 0%, #e0913a 100%);
+  color: #fff; font-weight: 800; font-size: .8rem; letter-spacing: .12em;
+  padding: 6px 14px; border-radius: 999px; box-shadow: 0 4px 12px rgba(224,145,58,.35);
+}
+.pro-card h3 { margin: 0; font-size: 1.4rem; }
+.pro-card__copy { color: var(--ink-soft); line-height: 1.7; margin-bottom: 24px; }
+.pro-card__btn { width: 100%; justify-content: center; margin-top: auto; }
+.pro-card__note { text-align: center; color: var(--ink-faint); font-size: .85rem; margin-top: 16px; }
