@@ -1,3 +1,0 @@
-# Cloudflare Pages redirects
-# Serve the privacy policy at clean /privacy URL (no extension needed)
-/privacy         /privacy.html    200
