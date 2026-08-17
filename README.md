@@ -42,6 +42,17 @@ All copy lives in `index.html`. Feature content is grounded in the actual app so
 (`lib/models/...`, `lib/widgets/hydroponic/...`, `lib/services/sensors/...`). Keep marketing
 claims aligned with what the Flutter app actually implements.
 
+## Sponsors
+
+Botanisht is built in the open, for free, with no ads, no telemetry, and
+no subscriptions. If the site saves you a plant or helps you grow something
+beautiful, consider becoming a sponsor.
+
+[![GitHub Sponsors](https://img.shields.io/badge/Sponsor-%23E53935?style=flat&logo=github&logoColor=white)](https://github.com/sponsors/royabby365)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00?style=flat&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/royabby)
+
+---
+
 ## License
 
 MIT — same as the Botanisht app.
