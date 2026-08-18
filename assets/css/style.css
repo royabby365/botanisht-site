@@ -150,6 +150,15 @@ img { max-width: 100%; display: block; }
   background: radial-gradient(circle at 30% 30%, var(--leaf) 0 30%, transparent 32%); }
 .leaf-deco--1 { top: 40px; left: 4%; transform: rotate(20deg); }
 .leaf-deco--2 { bottom: 30px; right: 6%; transform: rotate(-30deg); }
+.wordmark-badge {
+  position: absolute; bottom: 20px; right: 4%;
+  border-radius: 14px; overflow: hidden;
+  box-shadow: var(--shadow-md);
+  opacity: .85; transform: rotate(-3deg);
+  transition: opacity .3s, transform .3s;
+}
+.wordmark-badge img { display: block; max-width: clamp(130px, 16vw, 260px); height: auto; }
+@media (max-width: 800px) { .wordmark-badge { display: none; } }
 
 .hero__inner {
   position: relative; z-index: 1;
